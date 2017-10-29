@@ -13,5 +13,65 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\core">
+      <UniqueIdentifier>{9f243148-82b9-468d-823a-c236d9b5a207}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\core\messaging">
+      <UniqueIdentifier>{32df1ac6-c3b8-44a2-a494-50680d4399f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\util">
+      <UniqueIdentifier>{fdd422ed-8f9f-420c-98f5-411aab3be3bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\util\hash">
+      <UniqueIdentifier>{cf3dc56b-30a4-406b-82a3-72cf276d1af9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\util\math">
+      <UniqueIdentifier>{5b7be2dc-4b0b-4d94-b97c-6766c8a11ceb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\util\containers">
+      <UniqueIdentifier>{01c93421-0aa4-494f-a238-447e06fa34a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\util\assert">
+      <UniqueIdentifier>{fb426102-315d-443b-9b90-decc4c8c4aa0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\util\memory">
+      <UniqueIdentifier>{1eb006ce-d5a8-4560-9102-1b22e4ec5b79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\core\time">
+      <UniqueIdentifier>{1ee85155-bac7-42f0-a3bc-6cb228f185ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\util\ret">
+      <UniqueIdentifier>{a9d3aa86-a927-4381-934b-2c3c3cac1647}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="core\main.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="util\containers\readme_containers.md">
+      <Filter>Source Files\util\containers</Filter>
+    </None>
+    <None Include="util\hash\readme_hash.md">
+      <Filter>Source Files\util\hash</Filter>
+    </None>
+    <None Include="util\memory\readme_memory.md">
+      <Filter>Source Files\util\memory</Filter>
+    </None>
+    <None Include="util\assert\readme_assert.md">
+      <Filter>Source Files\util\assert</Filter>
+    </None>
+    <None Include="core\time\readme_time.md">
+      <Filter>Source Files\core\time</Filter>
+    </None>
+    <None Include="core\messaging\readme_messaging.md">
+      <Filter>Source Files\core\messaging</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="util\ret\codes.h">
+      <Filter>Source Files\util\ret</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
