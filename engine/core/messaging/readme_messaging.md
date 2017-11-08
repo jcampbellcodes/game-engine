@@ -12,6 +12,7 @@ event fires, all registered listeners are notified of the event. This will be an
 a good start!
 
 ideas->
+(components to make: message, message bus, stack, linked list, map, timer)
 --> messages have hash id + attributes and are just POD
 --> message bus class has an unordered map of message IDs to linked lists of receiver objects(/functions?)
 --> message bus has an internal clock/timer

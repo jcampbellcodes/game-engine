@@ -43,6 +43,12 @@
     <Filter Include="Source Files\util\ret">
       <UniqueIdentifier>{a9d3aa86-a927-4381-934b-2c3c3cac1647}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\core\messaging\message">
+      <UniqueIdentifier>{172b9695-7be4-4aea-8b5f-011572aecaf8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\core\messaging\message_bus">
+      <UniqueIdentifier>{943839fe-84f5-460a-9418-c777f369d800}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="core\main.cpp">
