@@ -3,7 +3,7 @@
 #pragma once
 
 enum class retcode;
-
+#include <assert.h>
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 /// \class	DynamicArray
 ///
@@ -59,7 +59,7 @@ private:
 #endif // !DYNAMICARRAY_
 
 template<class T>
-inline DynamicArray<T>::DynamicArray()
+inline DynamicArray<T>::DynamicArray() : _capacity(0), _size(0), _arr(nullptr)
 {
 }
 
@@ -77,54 +77,82 @@ inline DynamicArray & DynamicArray<T>::operator=(const DynamicArray &)
 template<class T>
 inline DynamicArray<T>::~DynamicArray()
 {
+	if (this->_arr)
+	{
+		delete[] this->_arr;
+	}
 }
 
 template<class T>
 inline T & DynamicArray<T>::at(size_t pos)
 {
-	// TODO: insert return statement here
+	if (pos < this->_size)
+	{
+		assert(this->_arr);
+		return this->_arr[pos];
+	}
 }
 
 template<class T>
 inline const T & DynamicArray<T>::at(size_t pos) const
 {
-	// TODO: insert return statement here
+	if (pos < this->_size)
+	{
+		assert(this->_arr);
+		return this->_arr[pos];
+	}
 }
 
 template<class T>
 inline T & DynamicArray<T>::operator[](size_t pos)
 {
-	// TODO: insert return statement here
+	if (pos < this->_size)
+	{
+		assert(this->_arr);
+		return this->_arr[pos];
+	}
 }
 
 template<class T>
 inline const T & DynamicArray<T>::operator[](size_t pos) const
 {
-	// TODO: insert return statement here
+	if (pos < this->_size)
+	{
+		assert(this->_arr);
+		return this->_arr[pos];
+	}
 }
 
 template<class T>
 inline T & DynamicArray<T>::front()
 {
-	// TODO: insert return statement here
+	if (this->_size)
+	{
+		assert(this->_arr);
+		return *this->_arr;
+	}
 }
 
 template<class T>
 inline const T & DynamicArray<T>::front() const
 {
-	// TODO: insert return statement here
+	if (this->_size)
+	{
+		assert(this->_arr);
+		return *this->_arr;
+	}
 }
 
 template<class T>
 inline bool DynamicArray<T>::empty() const
 {
-	return false;
+	return this->_size == 0;
 }
 
 template<class T>
 inline int DynamicArray<T>::size() const
 {
-	return 0;
+	return this->_size;
 }
 
 template<class T>
