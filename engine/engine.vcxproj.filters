@@ -49,10 +49,19 @@
     <Filter Include="Source Files\core\messaging\message_bus">
       <UniqueIdentifier>{943839fe-84f5-460a-9418-c777f369d800}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\util\containers\dynamic_array">
+      <UniqueIdentifier>{07e1ce4c-f2ad-46b2-9eb8-34117bb45d3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\tests">
+      <UniqueIdentifier>{2c6bffc6-e8ea-4421-b19c-93da6b04b239}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="core\main.cpp">
       <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="tests\dynamicarray_tests.h">
+      <Filter>Source Files\tests</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -78,6 +87,9 @@
   <ItemGroup>
     <ClInclude Include="util\ret\codes.h">
       <Filter>Source Files\util\ret</Filter>
+    </ClInclude>
+    <ClInclude Include="util\containers\dynamic_array.h">
+      <Filter>Source Files\util\containers\dynamic_array</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="core\main.cpp" />
+    <ClCompile Include="tests\dynamicarray_tests.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="core\messaging\readme_messaging.md" />
@@ -30,6 +31,7 @@
     <None Include="util\memory\readme_memory.md" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="util\containers\dynamic_array.h" />
     <ClInclude Include="util\ret\codes.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
